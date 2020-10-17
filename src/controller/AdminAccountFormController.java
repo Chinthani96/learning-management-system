@@ -80,6 +80,7 @@ public class AdminAccountFormController {
     public void btnDashboard_OnAction(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/AdminDashboard.fxml"));
         Scene mainScene =  new Scene(root);
+        System.out.println(mainScene);
         Stage mainStage = (Stage)this.root.getScene().getWindow();
         mainStage.setScene(mainScene);
         mainStage.centerOnScreen();
@@ -96,6 +97,8 @@ public class AdminAccountFormController {
     public void btnModules_OnAction(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/AdminModuleForm.fxml"));
         Scene mainScene =  new Scene(root);
+        Scene scene2 =  new Scene(root);
+        
         Stage mainStage = (Stage)this.root.getScene().getWindow();
         mainStage.setScene(mainScene);
         mainStage.centerOnScreen();
